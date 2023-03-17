@@ -48,31 +48,27 @@ header {
 main {
   margin: 20px;
 }
-.paragrafo {
-  margin-bottom: 20px;
-}
+
 .principal {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 20px;
+  grid-template-areas:
+    "um dois tres"
+    "quatro cinco seis"
+    "sete oito nove"
+    "dez onze doze"
+    "treze x y ";
 }
 
-nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.a8 {
+.projeto1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border: 3px solid #ff0043;
-  border-radius: 20px;
-  padding: 10px 0 10px 0;
   background-color: black;
+  border-radius: 20px;
+  padding: 20px;
   grid-area: um;
 }
 .b8 {
@@ -81,9 +77,8 @@ nav {
   align-items: center;
   flex-direction: column;
   border: 3px solid #ff0043;
-  border-radius: 20px;
-  padding: 10px 0 10px 0;
   background-color: black;
+  border-radius: 20px;
   grid-area: dois;
 }
 .c8 {
@@ -92,9 +87,8 @@ nav {
   align-items: center;
   flex-direction: column;
   border: 3px solid #ff0043;
-  border-radius: 20px;
-  padding: 10px 0 10px 0;
   background-color: black;
+  border-radius: 20px;
   grid-area: tres;
 }
 .d8 {
@@ -103,9 +97,8 @@ nav {
   align-items: center;
   flex-direction: column;
   border: 3px solid #ff0043;
-  border-radius: 20px;
-  padding: 10px 0 10px 0;
   background-color: black;
+  border-radius: 20px;
   grid-area: quatro;
 }
 .a9 {
@@ -114,9 +107,8 @@ nav {
   align-items: center;
   flex-direction: column;
   border: 3px solid #ff0043;
-  border-radius: 20px;
-  padding: 10px 0 10px 0;
   background-color: black;
+  border-radius: 20px;
   grid-area: cinco;
 }
 
@@ -126,9 +118,8 @@ nav {
   align-items: center;
   flex-direction: column;
   border: 3px solid #ff0043;
-  border-radius: 20px;
-  padding: 10px 0 10px 0;
   background-color: black;
+  border-radius: 20px;
   grid-area: seis;
 }
 
@@ -138,9 +129,8 @@ nav {
   align-items: center;
   flex-direction: column;
   border: 3px solid #ff0043;
-  border-radius: 20px;
-  padding: 10px 0 10px 0;
   background-color: black;
+  border-radius: 20px;
   grid-area: sete;
 }
 
@@ -150,9 +140,8 @@ nav {
   align-items: center;
   flex-direction: column;
   border: 3px solid #ff0043;
-  border-radius: 20px;
-  padding: 10px 0 10px 0;
   background-color: black;
+  border-radius: 20px;
   grid-area: oito;
 }
 
@@ -162,9 +151,8 @@ nav {
   align-items: center;
   flex-direction: column;
   border: 3px solid #ff0043;
-  border-radius: 20px;
-  padding: 10px 0 10px 0;
   background-color: black;
+  border-radius: 20px;
   grid-area: nove;
 }
 
@@ -174,9 +162,8 @@ nav {
   align-items: center;
   flex-direction: column;
   border: 3px solid #ff0043;
-  border-radius: 20px;
-  padding: 10px 0 10px 0;
   background-color: black;
+  border-radius: 20px;
   grid-area: dez;
 }
 
@@ -186,9 +173,8 @@ nav {
   align-items: center;
   flex-direction: column;
   border: 3px solid #ff0043;
-  border-radius: 20px;
-  padding: 10px 0 10px 0;
   background-color: black;
+  border-radius: 20px;
   grid-area: onze;
 }
 .d1 {
@@ -197,25 +183,31 @@ nav {
   align-items: center;
   flex-direction: column;
   border: 3px solid #ff0043;
-  border-radius: 20px;
-  padding: 10px 0 10px 0;
   background-color: black;
+  border-radius: 20px;
   grid-area: doze;
 }
+
 .d2 {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   border: 3px solid #ff0043;
-  border-radius: 20px;
-  padding: 10px 0 10px 0;
   background-color: black;
+  border-radius: 20px;
   grid-area: treze;
 }
 
-.foto-turma {
-  width: 15%;
+.foto-cont {
+  width: 80%;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 footer {
   background-color: #1b1b1b;
@@ -252,8 +244,20 @@ footer {
     font-weight: 600;
     text-shadow: 1px 1px white;
   }
-  .logo {
-    width: 20%;
+  .principal {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+      "um dois"
+      "tres quatro"
+      "cinco seis"
+      "sete oito"
+      "nove dez"
+      "onze doze"
+      "treze x";
+  }
+  .logo-footer {
+    width: 40%;
   }
 }
 
@@ -264,33 +268,27 @@ footer {
     font-weight: 600;
     text-shadow: 1px 1px white;
   }
-  .logo {
-    width: 30%;
-  }
-  .geral {
+}
+
+@media (max-width: 530px) {
+  .principal {
     display: grid;
-    grid-template-columns: 1fr;
+    gap: 20px;
     grid-template-areas:
       "um"
       "dois"
       "tres"
       "quatro"
-      "cinco";
-    gap: 30px;
-    margin: 30px;
+      "cinco"
+      "seis"
+      "sete"
+      "oito"
+      "nove"
+      "dez"
+      "onze"
+      "doze"
+      "treze";
   }
-  footer {
-    background-color: #1b1b1b;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    padding: 30px;
-    border-top: 3px solid #ff0043;
-  }
-}
-@media (max-width: 530px) {
   .logo-footer {
     width: 35%;
   }

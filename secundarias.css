@@ -58,7 +58,8 @@ main {
     "um dois tres"
     "quatro cinco seis"
     "sete oito nove"
-    "dez onze doze";
+    "dez onze doze"
+    "treze x y ";
 }
 
 .a8 {
@@ -187,6 +188,18 @@ main {
   border-radius: 20px;
   grid-area: doze;
 }
+
+.d2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 3px solid #ff0043;
+  background-color: black;
+  border-radius: 20px;
+  grid-area: treze;
+}
+
 .foto-cont {
   width: 80%;
 }
@@ -241,7 +254,8 @@ footer {
       "cinco seis"
       "sete oito"
       "nove dez"
-      "onze doze";
+      "onze doze"
+      "treze x";
   }
   .logo-footer {
     width: 40%;
@@ -273,7 +287,8 @@ footer {
       "nove"
       "dez"
       "onze"
-      "doze";
+      "doze"
+      "treze";
   }
   .logo-footer {
     width: 35%;
