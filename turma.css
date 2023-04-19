@@ -120,7 +120,7 @@ nav {
   grid-area: cinco;
 }
 
-.b9 {
+.d2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -201,17 +201,6 @@ nav {
   padding: 10px 0 10px 0;
   background-color: black;
   grid-area: doze;
-}
-.d2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border: 3px solid #ff0043;
-  border-radius: 20px;
-  padding: 10px 0 10px 0;
-  background-color: black;
-  grid-area: treze;
 }
 
 .foto-turma {

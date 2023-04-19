@@ -58,18 +58,18 @@ main {
     "um dois tres"
     "quatro cinco seis"
     "sete oito nove"
-    "dez onze doze"
-    "treze x y ";
+    "dez onze doze";
 }
 
 .a8 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   border: 3px solid #ff0043;
   background-color: black;
   border-radius: 20px;
+  padding: 10px;
   grid-area: um;
 }
 .b8 {
@@ -80,6 +80,7 @@ main {
   border: 3px solid #ff0043;
   background-color: black;
   border-radius: 20px;
+  padding: 10px;
   grid-area: dois;
 }
 .c8 {
@@ -90,6 +91,7 @@ main {
   border: 3px solid #ff0043;
   background-color: black;
   border-radius: 20px;
+  padding: 10px;
   grid-area: tres;
 }
 .d8 {
@@ -100,6 +102,7 @@ main {
   border: 3px solid #ff0043;
   background-color: black;
   border-radius: 20px;
+  padding: 10px;
   grid-area: quatro;
 }
 .a9 {
@@ -110,18 +113,8 @@ main {
   border: 3px solid #ff0043;
   background-color: black;
   border-radius: 20px;
+  padding: 10px;
   grid-area: cinco;
-}
-
-.b9 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border: 3px solid #ff0043;
-  background-color: black;
-  border-radius: 20px;
-  grid-area: seis;
 }
 
 .c9 {
@@ -132,7 +125,8 @@ main {
   border: 3px solid #ff0043;
   background-color: black;
   border-radius: 20px;
-  grid-area: sete;
+  padding: 10px;
+  grid-area: seis;
 }
 
 .d9 {
@@ -143,7 +137,8 @@ main {
   border: 3px solid #ff0043;
   background-color: black;
   border-radius: 20px;
-  grid-area: oito;
+  padding: 10px;
+  grid-area: sete;
 }
 
 .a1 {
@@ -154,7 +149,8 @@ main {
   border: 3px solid #ff0043;
   background-color: black;
   border-radius: 20px;
-  grid-area: nove;
+  padding: 10px;
+  grid-area: oito;
 }
 
 .b1 {
@@ -165,7 +161,8 @@ main {
   border: 3px solid #ff0043;
   background-color: black;
   border-radius: 20px;
-  grid-area: dez;
+  padding: 10px;
+  grid-area: nove;
 }
 
 .c1 {
@@ -176,7 +173,8 @@ main {
   border: 3px solid #ff0043;
   background-color: black;
   border-radius: 20px;
-  grid-area: onze;
+  padding: 10px;
+  grid-area: dez;
 }
 .d1 {
   display: flex;
@@ -186,7 +184,8 @@ main {
   border: 3px solid #ff0043;
   background-color: black;
   border-radius: 20px;
-  grid-area: doze;
+  padding: 10px;
+  grid-area: onze;
 }
 
 .d2 {
@@ -197,11 +196,16 @@ main {
   border: 3px solid #ff0043;
   background-color: black;
   border-radius: 20px;
-  grid-area: treze;
+  padding: 10px;
+  grid-area: doze;
 }
 
 .foto-cont {
   width: 80%;
+}
+
+.foto-destaque {
+  width: 30%;
 }
 
 nav {
@@ -210,6 +214,14 @@ nav {
   justify-content: center;
   align-items: center;
 }
+
+a {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
 footer {
   background-color: #1b1b1b;
   display: flex;
@@ -254,8 +266,7 @@ footer {
       "cinco seis"
       "sete oito"
       "nove dez"
-      "onze doze"
-      "treze x";
+      "onze doze";
   }
   .logo-footer {
     width: 40%;
@@ -287,8 +298,7 @@ footer {
       "nove"
       "dez"
       "onze"
-      "doze"
-      "treze";
+      "doze";
   }
   .logo-footer {
     width: 35%;
